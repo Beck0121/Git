@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Választás 2024</h1>
+    <hr>
+    <div>
+        <p>Az álábbi oldalon olvashatnak egy leírást a választás menetéről.<br>
+            Lenetebb található a választási űrlap. Itt tudja leadni a szavazatát.
+        </p>
+        <br>
+        <H2>Választási szabályzat:</H2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos natus iste eum. Rerum, suscipit et nulla autem animi harum sequi quae illo soluta quaerat laborum accusantium porro incidunt optio voluptatum!</p>
+        
+    </div>
+    <div>
+    <p style="display: inline;" id="kor">Elmúlt már 18 éves?</p>
+        <input type="radio" id="kor" value="igen">
+        <label>igen</label>
+        <input type="radio" id="kor" value="nem">
+        <label for="nem">nem</label>
+    
+    <p>Ha elmúlt 18 éves leadhatja szavazatát!</p>
+    </div>
+    <div>
+        <h2>Szavazás</h2>
+    Adatok bekérése:
+    <br>
+    <hr>
+    <div class="adatok">
+        Neme:
+        <br>   
+        <input type="radio" value="férfi" name="férfi">
+        <label for="férfi">férfi</label><br>
+        <input type="radio" value="nő" name="nő">
+        <label for="nő">nő</label>
+        <br><br>
+        Életkora:
+        <br>
+        <input type="radio" id="fiatal">
+        <label for="kor">18-39 közötti</label><br>
+        <input type="radio" id="középkorú">
+        <label for="kor">40-60 közötti</label><br>
+        <input type="radio" id="idős">
+        <label for="kor">61-80 közötti</label><br>
+        <input type="radio" id="kora vén">
+        <label for="kor">80+ feletti</label><br>
+        <br>
+        Lakhely(Vármegye):
+        <br>
+        <label for="megye">Válassza ki a megyét:</label>
+        <select name="megye" id="megye">
+          <option value="Budapest">Budapest</option>
+          <option value="Pest">Pest</option>
+          <option value="Fejér ">Fejér</option>
+          <option value="Bács">Bács</option>
+          <option value="Győr">Győr</option>
+        </select>
+        <br><br>
+    </div>
+    <hr>
+    <div>
+       <p> A szavazás menete, a megadott lehetőségek közül válaszon <br>
+        egy pártot és egy miniszterelnöki jelöltet. <br>
+        Ha kiválasztotta az ön áltat támogatott pártot és jelöltett. Ellenőrizze az adatokat a beküldés előtt! <br><br>
+        </p>
+        Párt:
+        <br>
+        <input type="radio" id="Narancs">
+        <label for="párt">Narancs</label><br>
+        <input type="radio" id="Piros">
+        <label for="párt">Piros</label><br>
+        <input type="radio" id="Kék">
+        <label for="párt">Kék</label><br>
+        <input type="radio" id="Kutya">
+        <label for="párt">Kutya</label><br> <br>
+        Politikus: 
+        <br>
+        <input type="radio" id="KB">
+        <label for="Politikus">Kiss Béla</label><br>
+        <input type="radio" id="TA">
+        <label for="Politikus">Tóth Anita</label><br>
+        <input type="radio" id="HA">
+        <label for="Politikus">Hajnalka Anna</label><br>
+        <input type="radio" id="BB">
+        <label for="Politikus">Bartók Böbe</label><br>
+        <br>
+        <input type="submit" value="Küldés">  
+    </div>
+
+</body>
+</html>
